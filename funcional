@@ -85,7 +85,7 @@ class MinhaGUI:
         
     def run_dirb(self, target):
         print("\nRunning Dirb. Please Wait.")
-        aux = 'http\\:' + target
+        aux = 'http://' + target
         output = subprocess.run(['dirb', aux], capture_output=True)
         logging.debug(output.stdout.decode("utf-8"))
         print("Execution Dirb completed")        
